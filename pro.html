@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/fort.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+    <title>프로그래밍</title>
+    <style media="screen">
+      footer{
+        margin-top: 537px;
+      }
+      .record_wrap {
+        width:90%;
+        margin:0px auto;
+        display:flex;
+        justify-content:space-between;
+      }
+
+      .record {
+        position:relative;
+        width:100%;
+        height:40vw;
+        overflow:hidden;
+        @include shadow(1);
+        background-color:#fff;
+        cursor:pointer;
+        transition: box-shadow 300ms;
+        &:hover {
+          @include shadow(2);
+        }
+      }
+
+      .record-arrow {
+        position:absolute;
+        padding:80%;
+        img {
+          width:3px;
+          height:3px;
+          background-image:url("http://www.portalguard.com/images/icons/right-arrow.png");
+          transform:translateX(85%);
+          opacity:0;
+          transition:all 400ms ease-in-out;
+        }
+        }
+
+      .record:hover .record-arrow {
+        transform:translateX(85%);
+        opacity:1;
+      }
+
+      .record-display {
+        width:100%;
+        height:100%;
+        top:0;
+        background-image:url("./img/banner2.png");
+        background-size:cover;
+        background-position:center center;
+      }
+      .record:hover .record-display {
+        height:20%;
+        @include shadow(1);
+      }
+
+      .record-desc {
+        margin:40px 0 0 40px;
+        h1 {
+          margin:10px 0 10px 0;
+          font-size:1.3em;
+          font-weight:700;
+        }
+        p {
+          font-size:12px;
+          line-height:1.4em;
+          color:#666;
+        }
+        opacity:0;
+        transition: opacity 400ms ease-in-out 190ms ;
+      }
+
+      #record1 {
+        transition:height 700ms cubic-bezier(0.54, 0.21, 0.18, 1.35);
+      }
+      #record2 {
+        transition:height 500ms cubic-bezier(0.54, 0.21, 0.18, 1.35);
+      }
+      #record3 {
+        transition:height 300ms cubic-bezier(0.54, 0.21, 0.18, 1.35);
+      }
+
+      .record:hover .record-desc {
+        opacity:1;
+      }
+
+      .tagline {
+        margin:50px 0;
+        text-align:center;
+        color:green;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header id="head">
+      <nav id="nav">
+        <a href="INDEX_21961047.html"><img src="img/logo.png" width="170"></a>
+            <ul>
+                <li><a href="fort.html">꿀모음집</a></li>
+                <li><a href="design.html">디자인</a>
+                    <ul id="color">
+                        <li><a href="design/naver.html">네이버 클라우드</a></li>
+                        <li><a href="design/ns.html">닌텐도 스위치</a></li>
+                        </li>
+                    </ul>
+                <li><a href="plan.html">기획 및 스토리보드</a>
+                    <ul id="color">
+                        <li><a href="plan/cgv1.html">CGV UI 개선안</a></li>
+                        <li><a href="plan/fun1.html">Fun Shave! 제안서</a></li>
+                        <li><a href="plan/LOADSTAR.html">LOADSTAR 제안서</a></li>
+                        <li><a href="plan/amor.html">아모레퍼시픽 리뉴얼</a></li>
+                        <li><a href="plan/cgv2.html">CGV 스토리보드</a></li>
+                        <li><a href="plan/fun2.html">Fun Shave! 스토리보드</a></li>
+                    </ul>
+                </li>
+                <li><a href="pro.html">프로그래밍</a>
+                  <ul id="color">
+                    <li><a href="web/web1.html">테일러 스위프트 팬카페</a></li>
+                    <li><a href="web/web2.html">꿀돼지 커뮤니티</a></li>
+                    <li><a href="web/web3.html">5SOS 팬카페</a></li>
+                  </ul>
+                </li>
+            <li><a href="contact.html">문의하기</a></li>
+        </nav>
+    </header>
+
+    <section id="main">
+      <section id="con4">
+        <section class="record">
+           <div id="record2" class="record-display">
+           </div>
+           <div class="record-desc">
+             <h1 class="font">프로그래밍(Programming)</h1><br>
+             <p>해당 페이지에서는 2019년 ~ 2020년까지 진행한 웹 사이트 및 웹 스토리보드 등을 살펴볼 수 있습니다. </p>
+             <p>웹 사이트를 만들기 위해 HTML, CSS, Java Script 등에 대해 본 학과를 통해 처음 배우면서 느낀건 새로운 서비스를 기획 하는 것 외에</p>
+             <p>배우는 과목 중 가장 어렵다고 느꼈습니다. 2020년 소비자 트랜드만 알아가던 저에게 웹에 대한 트랜드 또한 파악하고 이를 적용시키는 것은</p>
+             <p>생각보다 큰 난관으로 다가왔지만 어렵고 마냥 불가능하다고 생각되는 것들을 실천하고 완성하면서 느낄 수 있는 성취감은 저에게 크게 다가왔습니다.</p>
+             <p>특히나 자세히 콘셉트를 정하고 이를 바탕으로 어울리는 스토리보드를 그리는 것에서 굉장히 많은 고민을 하게 되었고 과정을 중요하게 생각하는 저에겐</p>
+             <p>기획이라는 분야가 단순히 콘텐츠를 만들거나 개선하는 것에 국한된 것이 아닌 다양한 분야에서도 매우 중요한 역할을 한다는 것을 알 수 있었습니다.</p>
+             <p>좋아하는 가수나 주제에 대해 작업을 하면서 굉장히 즐거운 과정을 즐길 수 있었고 아직은 조금 부족한 실력이지만 꾸준함과 지치지 않는 열정으로</p>
+             <p>완성한 결과물이 비록 누추하지만 재미있게 구경해주시면 감사하겠습니다.</p>
+           </div>
+        </section>
+      </section>
+      <section id="con1">
+        <div id="con_title">
+          FORTPOLIO
+        </div>
+        <ul>
+          <li><a href="fort.html">전체보기</a></li>
+          <li><a href="design.html">디자인</a></li>
+          <li><a href="plan.html">기획 및 스토리보드</a></li>
+          <li><a href="pro.html">프로그래밍</a></li>
+          <li><a href="web1.html">테일러 스위프트 팬카페</a></li>
+          <li><a href="web2.html">꿀돼지 커뮤니티 사이트</a></li>
+          <li><a href="web3.html">5SOS 팬카페</a></li>
+        </ul>
+      </section>
+      <section id="con3">
+        <h2>꿀모음집 프로그래밍</h2>
+        <a href="web/web1.html"><img src="img/contents/web1_content.png" width="460"></a>
+        <a href="web/web2.html"><img src="img/contents/web2_content.png" width="460"></a>
+        <a href="web/web3.html"><img src="img/contents/web3_content.png" width="460"></a>
+      </section>
+    </section>
+
+    <div class="clear"></div>
+
+        <footer>
+          <section id="footer">
+            <nav id="f_logo">
+              <a href="INDEX_21961047.html"><img src="img/logo.png" width="200"></a>
+            </nav>
+              <ul id="address">
+                <li><a href="fort.html">꿀모음집</a></li>
+                <li><a href="design.html">디자인</a></li>
+              </ul>
+              <ul id="address">
+                <li><a href="plan.html">기획 및 스토리보드</a></li>
+                <li><a href="pro.html">프로그래밍</a></li>
+                <li><a href="contact.html">문의하기</a></li>
+              </ul>
+              <ul id="address">
+                <li>경기도 화성시 향남읍 삼천병마로 297번길</li>
+                <li>TEL : 010 - 4077 - 95** | E-main : younjin621@naver.com</li>
+                <li>Copyright (c) algeng All Right Reserved </li>
+              </ul>
+              <ul id="footer_sns">
+                <li><a href="#"><img src="img/sns1.png" width="30"></a></li>
+                <li><a href="#"><img src="img/sns2.png" width="30"></a></a></li>
+                <li><a href="#"><img src="img/sns3.png" width="30"></a></a></li>
+              </ul>
+          </section>
+        </footer>
+  </body>
+</html>

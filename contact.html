@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/fort.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+    <title>문의하기</title>
+    <style media="screen">
+      footer{
+        margin-top: 388px;
+      }
+    }
+    .record_wrap {
+      width:90%;
+      margin:0px auto;
+      display:flex;
+      justify-content:space-between;
+    }
+
+    .record {
+      position:relative;
+      width:100%;
+      height:40vw;
+      overflow:hidden;
+      @include shadow(1);
+      background-color:#fff;
+      cursor:pointer;
+      transition: box-shadow 300ms;
+      &:hover {
+        @include shadow(2);
+      }
+    }
+
+    .record-arrow {
+      position:absolute;
+      padding:80%;
+      img {
+        width:3px;
+        height:3px;
+        background-image:url("http://www.portalguard.com/images/icons/right-arrow.png");
+        transform:translateX(85%);
+        opacity:0;
+        transition:all 400ms ease-in-out;
+      }
+      }
+
+    .record:hover .record-arrow {
+      transform:translateX(85%);
+      opacity:1;
+    }
+
+    .record-display {
+      width:100%;
+      height:100%;
+      top:0;
+      background-image:url("img/banner5.jpg");
+      background-size:cover;
+      background-position:center center;
+    }
+    .record:hover .record-display {
+      height:20%;
+      @include shadow(1);
+    }
+
+    .record-desc {
+      margin:40px 0 0 40px;
+      h1 {
+        margin:10px 0 10px 0;
+        font-size:1.3em;
+        font-weight:700;
+      }
+      p {
+        font-size:12px;
+        line-height:1.4em;
+        color:#666;
+      }
+      opacity:0;
+      transition: opacity 400ms ease-in-out 190ms ;
+    }
+
+    #record1 {
+      transition:height 700ms cubic-bezier(0.54, 0.21, 0.18, 1.35);
+    }
+    #record2 {
+      transition:height 500ms cubic-bezier(0.54, 0.21, 0.18, 1.35);
+    }
+    #record3 {
+      transition:height 300ms cubic-bezier(0.54, 0.21, 0.18, 1.35);
+    }
+
+    .record:hover .record-desc {
+      opacity:1;
+    }
+
+    .tagline {
+      margin:50px 0;
+      text-align:center;
+      color:green;
+    }
+    </style>
+  </head>
+  <body>
+    <header id="head">
+      <nav id="nav">
+        <a href="INDEX_21961047.html"><img src="img/logo.png" width="170"></a>
+            <ul>
+                <li><a href="fort.html">꿀모음집</a></li>
+                <li><a href="design.html">디자인</a>
+                    <ul id="color">
+                        <li><a href="design/naver.html">네이버 클라우드</a></li>
+                        <li><a href="design/ns.html">닌텐도 스위치</a></li>
+                        </li>
+                    </ul>
+                <li><a href="plan.html">기획 및 스토리보드</a>
+                    <ul id="color">
+                        <li><a href="plan/cgv1.html">CGV UI 개선안</a></li>
+                        <li><a href="plan/fun1.html">Fun Shave! 제안서</a></li>
+                        <li><a href="plan/LOADSTAR.html">LOADSTAR 제안서</a></li>
+                        <li><a href="plan/amor.html">아모레퍼시픽 리뉴얼</a></li>
+                        <li><a href="plan/cgv2.html">CGV 스토리보드</a></li>
+                        <li><a href="plan/fun2.html">Fun Shave! 스토리보드</a></li>
+                    </ul>
+                </li>
+                <li><a href="pro.html">프로그래밍</a>
+                  <ul id="color">
+                    <li><a href="web/web1.html">테일러 스위프트 팬카페</a></li>
+                    <li><a href="web/web2.html">꿀돼지 커뮤니티</a></li>
+                    <li><a href="web/web3.html">5SOS 팬카페</a></li>
+                  </ul>
+                </li>
+            <li><a href="contact.html">문의하기</a></li>
+        </nav>
+    </header>
+
+    <section id="main">
+
+      <section id="con4">
+        <section class="record">
+           <div id="record2" class="record-display">
+           </div>
+           <div class="record-desc">
+             <h1 class="font">발표를 마치며(REVIEW)</h1><br>
+             <p>2020년 코로나 사태로 인해 비대면으로 강의를 듣게 되어 초반에는 걱정이 앞섰지만 교수님덕분에 화상강의를 통해 웹 사이트 구축하는 것을</p>
+             <p>배움에 있어 큰 문제가 없어서 다행이라고 느껴집니다. 1학년 때 비해서 높아진 난이도로 인해서 마무리를 잘 할 수 있을까 스스로 의심도 하고</p>
+             <p>자책도 많이 했지만 교수님이 잘 이끌어주셔서 끝까지 올 수 있었던 것 같습니다. 종강까지 모두 수고하셨고 좋은 강의 들려주셔서 감사합니다 교수님!</p>
+           </div>
+        </section>
+      </section>
+
+      <section id="con1">
+        <div id="con_title">
+          FORTPOLIO
+        </div>
+        <ul>
+          <li><a href="fort.html">전체보기</a></li>
+          <li><a href="design.html">디자인</a></li>
+          <li><a href="plan.html">기획 및 스토리보드</a></li>
+          <li><a href="pro.html">프로그래밍</a></li>
+        </ul>
+      </section>
+      <section id="con5">
+        <table>
+          <tr>
+            <td>신청자 : </td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>전화번호 :</td>
+            <td>010 - <input type="text"> - <input type="text"></td>
+          </tr>
+          <tr>
+            <td>이메일로 신청하기 : </td>
+            <td><input type="text"> @
+                     <select>
+                       <option>선택</option>
+                       <option>naver.com</option>
+                       <option>hanmail.com</option>
+                       <option>gmail.com</option>
+                       <option>daum.net</option>
+                       <option>직접입력</option>
+                     </select> </td>
+          </tr>
+          <tr>
+            <td>신청분야 : </td>
+            <td><input type="checkbox" name="hobby1"> 기획
+                <input type="checkbox" name="hobby1"> 스토리보드
+                <input type="checkbox" name="hobby2"> 디자인
+                <input type="checkbox" name="hobby4"> 프로그래밍</td>
+          </tr>
+          <tr>
+            <td>신청일시 : </td>
+            <td><input type="datetime-local"></td>
+          </tr>
+          <tr>
+            <td>메일 보내기 : </td>
+            <td><textarea rows="5" cols="80"></textarea></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button type="submit">확인</button>
+                <button type="reset">다시 쓰기</button></td>
+          </tr>
+        </table>
+      </section>
+    </section>
+
+    <div class="clear"></div>
+
+        <footer>
+          <section id="footer">
+            <nav id="f_logo">
+              <a href="INDEX_21961047.html"><img src="img/logo.png" width="200"></a>
+            </nav>
+              <ul id="address">
+                <li><a href="fort.html">꿀모음집</a></li>
+                <li><a href="design.html">디자인</a></li>
+              </ul>
+              <ul id="address">
+                <li><a href="plan.html">기획 및 스토리보드</a></li>
+                <li><a href="pro.html">프로그래밍</a></li>
+                <li><a href="contact.html">문의하기</a></li>
+              </ul>
+              <ul id="address">
+                <li>경기도 화성시 향남읍 삼천병마로 297번길</li>
+                <li>TEL : 010 - 4077 - 95** | E-main : younjin621@naver.com</li>
+                <li>Copyright (c) algeng All Right Reserved </li>
+              </ul>
+              <ul id="footer_sns">
+                <li><a href="#"><img src="img/sns1.png" width="30"></a></li>
+                <li><a href="#"><img src="img/sns2.png" width="30"></a></a></li>
+                <li><a href="#"><img src="img/sns3.png" width="30"></a></a></li>
+              </ul>
+          </section>
+        </footer>
+  </body>
+</html>

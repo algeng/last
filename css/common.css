@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: "나눔바른고딕 light";
+  font-size: 16px;
+  color: #444444;
+  background-color: #f2f0f0;
+}
+header#head{
+  background-color: #000000;
+}
+header#head ul{
+  float: right;
+  margin-top: 10px;
+}
+header#head ul li{
+  color: #ffffff;
+  list-style: none;
+  display: inline;
+  padding-right: 25px;
+}
+header#head a:link{
+  color:#ffffff;
+  text-decoration: none;
+}
+header#head a:hover{
+  color:#fff599;
+  text-decoration: none;
+}
+header#head a:active{
+  color:#ffe608;
+  text-decoration: none;
+}
+header#head a:visited{
+  color:#ffffff;
+  text-decoration: none;
+}
+/*푸터!*/
+footer{
+  background-color: #000000;
+  height: 170px;
+}
+section#footer{
+  width: 1280px;
+  margin: 0 auto;
+}
+section#footer #f_logo{
+  float: left;
+  margin: 40px 0 0 0;
+}
+section#footer #address{
+  float: left;
+  margin: 40px 0 0 50px;
+}
+section#footer #footer_sns{
+  float: right;
+  margin: 70px 10px 0 0;
+}
+section#footer #footer_sns li{
+  display: inline;
+  padding-left: 12px;
+}
+section#footer ul li{
+  color: #ffffff;
+  list-style: none;
+  padding-top: 10px;
+}
+section#footer a:link{
+  color: #ffffff;
+  text-decoration: none;
+}
+section#footer a:hover{
+  color: #fff599;
+  text-decoration: none;
+}
+section#footer a:active{
+  color: #ffe608;
+  text-decoration: none;
+}
+section#footer a:visited{
+  color: #ffffff;
+  text-decoration: none;
+}

@@ -1,0 +1,21 @@
+/*footer*/
+footer {
+  height: 100px;
+  margin-top: 50px;
+  border-top: solid 1px #bbbbbb;
+}
+footer #footer_logo{
+  float: left;
+  margin: 15px 0 0 20px;
+}
+footer #address{
+  float: left;
+  margin: 20px 0 0 10px;
+}
+footer #footer_sns{
+  float: right;
+  margin: 28px 10px 0 0;
+}
+footer #footer_sns li{
+  display: inline;
+}
